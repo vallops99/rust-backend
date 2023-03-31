@@ -1,0 +1,18 @@
+[package]
+name = "backend"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+axum = "0.6.7"
+tracing = "0.1.37"
+thiserror = "1.0.38"
+axum-macros = "0.3.7"
+serde_json = "1.0.91"
+pgdb-lib-rs = { version = "0.1.2" }
+tokio = { version = "1.25.0", features = ["full"] }
+serde = { version = "1.0.152", features = ["derive"]}
+tracing-subscriber = { version="0.3.16", features = ["env-filter"] }
+sqlx = { version = "0.6.2", features = [ "runtime-async-std-native-tls", "postgres", "json" ] }
